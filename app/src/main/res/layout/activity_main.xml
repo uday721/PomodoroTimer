@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shanker.pomodorotimer.activity.MainActivity"
+    android:id="@+id/mainLayout">
+
+    <TextView
+        android:id="@+id/countdown_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="50sp"
+        tools:text="25:00" />
+
+    <Button
+        android:id="@+id/countdown_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countdown_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="Start" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        tools:text="Activity Name"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/total_elapsed_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="00:00:00"
+        android:layout_below="@+id/activity_name"
+        android:layout_centerHorizontal="true"/>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme = "@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.example.shanker.pomodorotimer.SettingsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        tools:layout="@layout/activity_settings" />
+
+
+</RelativeLayout>

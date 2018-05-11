@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/activity_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:width="250dp"
+        android:hint="Enter Activity Name"
+        android:text=""/>
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:id="@+id/time_elapsed"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="00:00:00"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="73dp"/>-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work Time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/work_seek_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="140dp"
+        android:max="60"
+        android:progress="25"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/work_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Minutes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="140dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short Break Time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"/>
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/break_seek_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="200dp"
+        android:max="15"
+        android:progress="5"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/break_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Minutes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="200dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long Break Time"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"/>
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/long_break_seek_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="260dp"
+        android:max="30"
+        android:progress="15"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/long_break_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Minutes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="260dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recurring Work Before Long Break "
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"/>
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/recurring_bar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="320dp"
+        android:max="10"
+        android:progress="4"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/recurring_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Times"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="320dp"/>
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/start_button"-->
+        <!--android:text="Start"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="400dp"/>-->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/history_display_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
